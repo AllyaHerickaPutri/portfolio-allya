@@ -1,0 +1,620 @@
+/* PORTFOLIO ALLYA HERICKA PUTRI */
+/* Semua ID dan Class menggunakan awalan allya_ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* supaya judul section tidak tertutup navbar */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17233d;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+#allya_header {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(20, 40, 80, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.allya_navbar {
+    max-width: 1120px;
+    min-height: 68px;
+    margin: auto;
+    padding: 0 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allya_brand {
+    color: #17233d;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.allya_brand b {
+    color: #1763c6;
+}
+
+.allya_brand_icon {
+    color: #1763c6;
+    font-weight: 800;
+    margin-right: 8px;
+    font-size: 25px;
+}
+
+.allya_menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.allya_menu a {
+    color: #26334c;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.allya_menu a:hover {
+    color: #1763c6;
+}
+
+/* HERO (background penuh selebar layar, isi tetap di tengah) */
+.allya_hero {
+    min-height: 300px;
+    padding: 38px max(6%, calc((100% - 1120px) / 2 + 28px));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    overflow: hidden;
+    background: linear-gradient(110deg, #eef4ff, #dce9ff);
+}
+
+.allya_hero_text {
+    flex: 1;
+    max-width: 530px;
+    position: relative;
+    z-index: 1;
+}
+
+.allya_greeting {
+    font-size: 20px;
+    font-weight: 700;
+    color: #26334c;
+}
+
+.allya_hero h1 {
+    color: #1559b7;
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+    margin: 2px 0 5px;
+}
+
+.allya_hero h2 {
+    color: #4d5b70;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.allya_hero_description {
+    max-width: 480px;
+    color: #3e4b60;
+    font-size: 13px;
+    margin: 13px 0 18px;
+}
+
+.allya_hero_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.allya_button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.allya_button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.allya_button_primary {
+    background: #1763c6;
+    color: white;
+}
+
+.allya_button_primary:hover {
+    background: #0d438e;
+}
+
+.allya_button_outline {
+    border: 1px solid #1763c6;
+    color: #1559b7;
+    background: white;
+}
+
+.allya_button_outline:hover {
+    background: #eaf1fc;
+}
+
+/* ILUSTRASI LAPTOP */
+.allya_hero_art {
+    flex: 0 1 43%;
+    min-width: 260px;
+    height: 225px;
+    position: relative;
+}
+
+.allya_circle {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    position: absolute;
+    right: 10px;
+    top: -30px;
+}
+
+.allya_laptop {
+    width: 245px;
+    position: absolute;
+    right: 28px;
+    bottom: 27px;
+    transform: rotate(-5deg);
+}
+
+.allya_laptop_screen {
+    height: 145px;
+    border: 9px solid #172b4d;
+    border-bottom-width: 13px;
+    border-radius: 10px 10px 4px 4px;
+    background: linear-gradient(140deg, #244a80, #0d1d3b);
+    box-shadow: 8px 10px 18px rgba(15, 34, 70, 0.2);
+    display: grid;
+    place-items: center;
+}
+
+.allya_laptop_screen span {
+    color: #69b7ff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.allya_laptop_base {
+    width: 275px;
+    height: 12px;
+    margin-left: -15px;
+    background: linear-gradient(#dce4ef, #8799b2);
+    border-radius: 2px 2px 13px 13px;
+}
+
+/* TANAMAN */
+.allya_plant {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    width: 55px;
+    height: 115px;
+}
+
+.allya_plant span {
+    position: absolute;
+    bottom: 42px;
+    left: 24px;
+    width: 20px;
+    height: 55px;
+    background: #269b72;
+    border-radius: 100% 0 100% 0;
+    transform-origin: bottom;
+}
+
+.allya_plant span:nth-child(1) {
+    transform: rotate(-48deg);
+    left: 7px;
+}
+
+.allya_plant span:nth-child(2) {
+    transform: rotate(-18deg);
+    left: 15px;
+    height: 68px;
+}
+
+.allya_plant span:nth-child(3) {
+    transform: rotate(22deg);
+    left: 28px;
+}
+
+.allya_plant span:nth-child(4) {
+    transform: rotate(48deg);
+    left: 31px;
+    height: 48px;
+}
+
+.allya_pot {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 43px;
+    height: 42px;
+    background: #ffffff;
+    border-radius: 5px 5px 14px 14px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* SECTION UMUM */
+.allya_section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 23px 28px 8px;
+}
+
+.allya_section_title {
+    display: inline-block;
+    color: #17233d;
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+    border-bottom: 3px solid #1763c6;
+}
+
+/* ABOUT ME */
+.allya_about_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.allya_about_text {
+    max-width: 690px;
+}
+
+.allya_about_text p {
+    color: #455166;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.allya_info_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+}
+
+.allya_info_list span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #34435c;
+    font-size: 13px;
+}
+
+/* Lucide mengubah <i> menjadi <svg>, jadi yang di-style adalah svg-nya */
+.allya_info_list svg {
+    width: 17px;
+    height: 17px;
+    color: #1763c6;
+    flex-shrink: 0;
+}
+
+.allya_profile_photo {
+    width: 190px;
+    min-width: 170px;
+    padding: 8px;
+    border-radius: 9px;
+    background: #eaf1fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.allya_profile_image {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 7px;
+}
+
+.allya_profile_photo p {
+    font-size: 11px;
+    color: #34435c;
+    font-weight: 600;
+}
+
+/* SKILLS */
+.allya_skills_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+}
+
+.allya_skill_card {
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #f0f4fb;
+    border: 1px solid #e5eaf2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.allya_skill_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(23, 99, 198, 0.13);
+}
+
+.allya_skill_card img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.allya_skill_text h3 {
+    font-size: 13px;
+    line-height: 1.3;
+    color: #24334d;
+}
+
+.allya_skill_text p {
+    font-size: 11px;
+    color: #667389;
+}
+
+/* PROJECTS */
+.allya_projects_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.allya_project_card {
+    overflow: hidden;
+    border: 1px solid #e1e7f0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 3px 9px rgba(20, 40, 80, 0.06);
+}
+
+.allya_project_visual {
+    height: 105px;
+    overflow: hidden;      /* bagian gambar yang berlebih dipotong */
+    display: block;
+}
+
+.allya_project_image {
+    width: 100%;
+    height: 105px;         /* sama dengan tinggi kotak */
+    object-fit: cover;     /* gambar mengisi kotak tanpa gepeng */
+    object-position: top;  /* tampilkan bagian atas gambar */
+    display: block;
+}
+
+.allya_project_info {
+    padding: 12px;
+}
+
+.allya_project_info h3 {
+    color: #17233d;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.allya_project_info p {
+    color: #566176;
+    font-size: 11px;
+    min-height: 68px;
+}
+
+.allya_project_tag {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1763c6;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.allya_view_project {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 15px;
+    background: #1763c6;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.allya_view_project:hover {
+    background: #0d438e;
+    transform: translateY(-2px);
+}
+
+/* FOOTER (background penuh selebar layar, isi tetap di tengah) */
+.allya_footer {
+    margin-top: 20px;
+    padding: 30px max(28px, calc((100% - 1120px) / 2 + 28px)) 18px;
+    background: #172b4d;
+    color: #ffffff;
+}
+
+.allya_footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.allya_footer_brand h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.allya_footer_brand p {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.allya_footer_contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-left: 1px solid #52627b; /* garis pembatas */
+    padding-left: 30px;
+    min-height: 65px;
+}
+
+.allya_footer_contact span {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    color: #e2e8f0;
+}
+
+.allya_footer_contact svg {
+    width: 17px;
+    height: 17px;
+    color: #60a5fa;
+    flex-shrink: 0;
+}
+
+.allya_copyright {
+    text-align: left;
+    border-top: 1px solid #40516b;
+    margin-top: 25px;
+    padding-top: 18px;
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* RESPONSIVE: TABLET */
+@media (max-width: 768px) {
+
+    .allya_navbar {
+        padding: 14px 18px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .allya_menu {
+        gap: 19px;
+    }
+
+    .allya_hero {
+        padding: 32px 22px;
+    }
+
+    .allya_hero_art {
+        min-width: 190px;
+        transform: scale(0.82);
+        transform-origin: center right;
+        margin-left: -25px;
+    }
+
+    .allya_projects_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .allya_footer_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .allya_footer_contact {
+        flex-direction: column;
+        align-items: flex-start;
+        border-left: none;
+        border-top: 1px solid #52627b;
+        padding-left: 0;
+        padding-top: 15px;
+        gap: 12px;
+    }
+}
+
+/* RESPONSIVE: HP */
+@media (max-width: 520px) {
+
+    .allya_hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .allya_hero_art {
+        align-self: center;
+        width: 100%;
+        max-width: 310px;
+        margin: 0;
+        transform: scale(0.9);
+        transform-origin: center;
+    }
+
+    .allya_about_content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .allya_profile_photo {
+        width: 100%;
+    }
+
+    .allya_skills_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .allya_projects_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .allya_menu {
+        gap: 14px;
+    }
+
+    .allya_menu a {
+        font-size: 12px;
+    }
+
+    .allya_section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.allya_project_tag { 
+    display: block; 
+}
