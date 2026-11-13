@@ -576,8 +576,8 @@ body {
     }
 
     .allya_hero_art {
-        flex: none;          /* tambahkan */
-        height: 225px;       /* tambahkan */
+        flex: none;         
+        height: 225px;       
         align-self: center;
         width: 100%;
         max-width: 310px;
